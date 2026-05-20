@@ -7,11 +7,7 @@ plugins {
 
 android {
     namespace = "com.rudra.financeflowpro"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.rudra.financeflowpro"
@@ -52,35 +48,32 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.compose.ui:ui-tooling-preview")
-// Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
-// Hilt
-    implementation("com.google.dagger:hilt-android:2.50")
-    ksp ("com.google.dagger:hilt-android-compiler:2.50")
+    implementation("com.google.dagger:hilt-android:2.59.2")
+    ksp("com.google.dagger:hilt-android-compiler:2.59.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     implementation("androidx.hilt:hilt-work:1.2.0")
-// Room implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-  //  ksp ("androidx.room:room-compiler:2.6.1")
-// WorkManager
+
+    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
+
     implementation("androidx.work:work-runtime-ktx:2.9.0")
-// Coroutines
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-// Lifecycle implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
-// Charts
+
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-// or:
     implementation("io.github.ehsannarmani:compose-charts:0.0.14")
-// Gson (JSON backup serialization)
+
     implementation("com.google.code.gson:gson:2.10.1")
-// CSV (optional, or use StringBuilder)
     implementation("com.opencsv:opencsv:5.7.1")
-// DataStore (Settings)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
-// Splash Screen
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     testImplementation(libs.junit)
