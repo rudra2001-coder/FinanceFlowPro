@@ -976,51 +976,14 @@ range, red bars where they overspend.
   ------------------------------------------------------------------------
 
 # 9. Gradle Dependencies (build.gradle.kts)
-
-+-----------------------------------------------------------------------+
-| **Key Dependencies**                                                  |
-|                                                                       |
-| // Jetpack Compose BOM                                                |
-| implementation(platform(\"androidx.compose:compose-bom:2024.02.00\")) |
-| implementation(\"androidx.compose.ui:ui\")                            |
-| implementation(\"androidx.compose.material3:material3\")              |
-| implementation(\"androidx.compose.ui:ui-tooling-preview\") //         |
-| Navigation                                                            |
-| implementation(\"androidx.navigation:navigation-compose:2.7.7\") //   |
-| Hilt implementation(\"com.google.dagger:hilt-android:2.50\")          |
-| kapt(\"com.google.dagger:hilt-android-compiler:2.50\")                |
-| implementation(\"androidx.hilt:hilt-navigation-compose:1.2.0\")       |
-| implementation(\"androidx.hilt:hilt-work:1.2.0\") // Room             |
-| implementation(\"androidx.room:room-runtime:2.6.1\")                  |
-| implementation(\"androidx.room:room-ktx:2.6.1\")                      |
-| kapt(\"androidx.room:room-compiler:2.6.1\") // WorkManager            |
-| implementation(\"androidx.work:work-runtime-ktx:2.9.0\") //           |
-| Coroutines                                                            |
-| imple                                                                 |
-| mentation(\"org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3\") |
-| // Lifecycle                                                          |
-| imp                                                                   |
-| lementation(\"androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0\") |
-| i                                                                     |
-| mplementation(\"androidx.lifecycle:lifecycle-runtime-compose:2.7.0\") |
-| // Charts                                                             |
-| implementation(\"com.github.PhilJay:MPAndroidChart:v3.1.0\") // or:   |
-| implementation(\"io.github.ehsannarmani:compose-charts:0.0.14\") //   |
-| Gson (JSON backup serialization)                                      |
-| implementation(\"com.google.code.gson:gson:2.10.1\") // CSV           |
-| (optional, or use StringBuilder)                                      |
-| implementation(\"com.opencsv:opencsv:5.7.1\") // DataStore (Settings) |
-| implementation(\"androidx.datastore:datastore-preferences:1.0.0\") // |
-| Splash Screen                                                         |
-| implementation(\"androidx.core:core-splashscreen:1.0.1\")             |
-+-----------------------------------------------------------------------+
+-----------------------------------+
 
 # 10. Final Checklist Before Release
 
 -   All accounts, transactions, transfers, savings, investments tested
     thoroughly
 
--   Backup runs automatically and files appear in Downloads/FinanceFlow/
+-   Backup runs automatically and files appear in Downloads/
 
 -   Restore correctly rebuilds the database from backup file
 
